@@ -31,6 +31,7 @@ public:
 };
 
 
+// Read-only subPool
 class PoolProxy {
 private:
 	static int refAmount;
