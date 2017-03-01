@@ -58,6 +58,11 @@ int main()
 
 	cout << endl << endl;
 
+	
+	delete gun;
+	delete ninja;
+	delete ak74;
+	
 	system("pause");
 	return 0;
 }
