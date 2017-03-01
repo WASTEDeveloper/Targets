@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Singleton.h"
 
-// this function do nothing
+// this function does nothing
 
 Owner::~Owner()
 {
