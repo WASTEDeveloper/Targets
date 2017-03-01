@@ -69,6 +69,7 @@ void WeaponDecorator::fire() const
 
 WeaponDecorator::~WeaponDecorator()
 {
+	delete gun;
 }
 
 
