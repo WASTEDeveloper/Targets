@@ -1,0 +1,4 @@
+﻿  ChainOfR.cpp
+d:\vistudio\patterns\chainor\chainor\chainofr.cpp(28): warning C4018: '>': signed/unsigned mismatch
+  ChainOR.vcxproj -> D:\ViStudio\Patterns\ChainOR\Debug\ChainOR.exe
+  ChainOR.vcxproj -> D:\ViStudio\Patterns\ChainOR\Debug\ChainOR.pdb (Full PDB)

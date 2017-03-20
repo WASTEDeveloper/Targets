@@ -1,0 +1,5 @@
+﻿  unittest1.cpp
+d:\vistudio\patterns\chainor\chainor\chainofr.cpp(28): warning C4018: '>': signed/unsigned mismatch
+d:\vistudio\patterns\chainor\unittest1\unittest1.cpp(185): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  UnitTest1.vcxproj -> D:\ViStudio\Patterns\ChainOR\Debug\UnitTest1.dll
+  UnitTest1.vcxproj -> D:\ViStudio\Patterns\ChainOR\Debug\UnitTest1.pdb (Full PDB)
