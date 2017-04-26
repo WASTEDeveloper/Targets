@@ -3,66 +3,18 @@
 #include <mutex>
 #include <functional>
 #include <string>
+#include "RWLock.h"
 
 using namespace std;
 
-string someText;
-string read()
-{
-	return someText;
-}
-
-void write(string toWrite)
-{
-	someText = toWrite;
-}
-
-
-typedef struct blackbox {
-	volatile int reader_count;
-	mutex read_lock;
-	mutex write_lock;
-} Blackbox;
-
-void ts_read(Blackbox *b, string &readTo, string (*readfunc)())
-{
-	b->read_lock.lock();
-	b->reader_count++;
-	if (b->reader_count == 1)
-		b->write_lock.lock();
-	b->read_lock.unlock();
-
-	readTo = readfunc();
-
-	b->read_lock.lock();
-	b->reader_count--;
-	if (b->reader_count == 0)
-		b->write_lock.unlock();
-	b->read_lock.unlock();
-}
-
-void ts_write(Blackbox *b, string writeFrom, void (*writefunc)(string))
-{
-	bool written = false;
-
-	while (!written)		// wait until there is no readers and writers
-	{
-		if (b->write_lock.try_lock())
-		{
-			if (b->reader_count == 0)
-			{
-				write(writeFrom);
-				written = true;
-			}
-		}
-		b->write_lock.unlock();
-	}
-}
-
+string common;
 
 int main()
 {
-	someText = "someText";
+	std::function<std::string()>read = []()->std::string {return common; };
+	std::function<void(std::string)>write = [](std::string toWrite) mutable {common = toWrite; };
+
+	common = "someText";
 	string text = "abc";
 	string text2 = "text2";
 	string towrite = "toWrite";
@@ -70,14 +22,14 @@ int main()
 
 	Blackbox *box = new Blackbox();
 	box->reader_count = 0;
-	thread reading1(ts_read, box, ref(text), &read);
+	thread reading1(ts_read, box, ref(text), read);
 	reading1.join();
 	cout << text;
 
-	thread writing(ts_write, box, towrite, &write);
+	thread writing(ts_write, box, towrite, write);
 	writing.join();
 
-	thread reading2(ts_read, box, ref(text2), &read);
+	thread reading2(ts_read, box, ref(text2), read);
 	reading2.join();
 
 	cout << text2;
