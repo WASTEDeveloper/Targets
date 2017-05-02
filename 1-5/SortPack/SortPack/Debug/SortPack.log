@@ -1,0 +1,6 @@
+﻿  SortPack.cpp
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(11): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(47): warning C4018: '<': signed/unsigned mismatch
+  SortPack.vcxproj -> C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\SortPack.exe
+  SortPack.vcxproj -> C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\SortPack.pdb (Full PDB)

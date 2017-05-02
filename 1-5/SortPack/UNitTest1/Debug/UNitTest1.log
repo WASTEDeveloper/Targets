@@ -1,0 +1,12 @@
+﻿  unittest1.cpp
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(11): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\sortpack\sortpack.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\unittest1\unittest1.cpp(24): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\unittest1\unittest1.cpp(42): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\unittest1\unittest1.cpp(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\unittest1\unittest1.cpp(78): warning C4018: '<': signed/unsigned mismatch
+c:\users\dell\desktop\targets\1-5\sortpack\unittest1\unittest1.cpp(96): warning C4018: '<': signed/unsigned mismatch
+     Creating library C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\UNitTest1.lib and object C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\UNitTest1.exp
+  UNitTest1.vcxproj -> C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\UNitTest1.dll
+  UNitTest1.vcxproj -> C:\Users\Dell\Desktop\Targets\1-5\SortPack\Debug\UNitTest1.pdb (Full PDB)
