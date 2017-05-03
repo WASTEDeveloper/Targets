@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\dell\desktop\targets\24-31\threadpool - 29\threadpool - 29\main.cpp(9): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ThreadPool - 29.vcxproj -> C:\Users\Dell\Desktop\Targets\24-31\ThreadPool - 29\Debug\ThreadPool - 29.exe
+  ThreadPool - 29.vcxproj -> C:\Users\Dell\Desktop\Targets\24-31\ThreadPool - 29\Debug\ThreadPool - 29.pdb (Full PDB)
